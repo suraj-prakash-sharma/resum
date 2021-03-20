@@ -1,0 +1,11 @@
+    {% load static%}
+       <div class="border-right border-warning h-100">
+            <div class="text-center" ><img src="{% static 'core/images/suraj.jpg' %}" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+            <h3 class="text-white mt-3 st-font">Er. Suraj Sharma</h3></div>
+            <hr  style="color:rgb(255, 255, 255);height:4px; ">
+            <nav class="nav flex-column text-center">
+            <a href="{% url 'home' %}"  class="nav-link menufontstyle {{home}}">HOME</a>
+            <a href="{% url 'services' %}"  class="nav-link menufontstyle {{services}}">SERVICES</a>
+            <a href="{% url 'skill' %}"  class="nav-link menufontstyle {{skill}}">SKILL</a>
+            <a href="{% url 'contact' %}"  class="nav-link menufontstyle  {{contact}}">CONTACT US</a>
+            </nav> </div>
